@@ -1,25 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Text, Switch, View, StyleSheet } from "react-native";
+import { stylesheet } from './styles.js'
+
+const styles = StyleSheet.create(stylesheet);
+
+
 
 function App() {
+  console.log(stylesheet);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <video src={require("./data/9clip.mp4")} width={document.documentElement.clientWidth} controls></video>
+      <View style={styles.descriptionBox}>
+        <Text>Suggested Sound-sources</Text>
+      </View>
+      <View style={styles.switchCase}>
+        <Switch style={styles.switch}></Switch>
+      </View>
+      
     </div>
+    // <View>
+    //   <Text>henlo</Text>
+    // </View>
   );
 }
 
