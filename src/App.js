@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Text, Switch, View, StyleSheet, TouchableOpacity } from "react-native";
 import { stylesheet } from './styles.js'
 
-
 const styles = StyleSheet.create(stylesheet);
 
 class VideoPlayer extends Component {
@@ -50,7 +49,7 @@ class ConfirmAnnotationsButton extends Component {
   }
 }
 
-export default class AppConditionTwo extends Component {
+export default class App extends Component {
   render() {
     return (
       <div>
@@ -78,6 +77,8 @@ Click on the label for further details about the label.</Text>
         <SwitchContainer>Brakes</SwitchContainer>
 
         <ConfirmAnnotationsButton/>
+
+        
       </div>
     );
   }
