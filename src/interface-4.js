@@ -17,8 +17,21 @@ import Checkbox from '@material-ui/core/Checkbox'
 import { Text, View, TouchableOpacity, StyleSheet } from "react-native";
 import { stylesheet } from './styles.js'
 
+import { createMuiTheme } from '@material-ui/core/styles';
+import teal from '@material-ui/core/colors/teal';
+import { ThemeProvider } from '@material-ui/styles';
+
+
+
 // Styles for confirm button
 const styles = StyleSheet.create(stylesheet);
+
+
+const theme = createMuiTheme({
+    palette: {
+      primary: teal,
+    },
+  });
 
 class VideoPlayer extends Component {
     render() {
@@ -68,7 +81,9 @@ class OptionCheckbox extends Component {
     render() {
         return (
             <FormControlLabel
-                control={<Checkbox />}
+                control={<Checkbox 
+                    color='primary'
+                />}
                 label={this.props.children}
             />
         );
@@ -78,7 +93,7 @@ class OptionCheckbox extends Component {
 export class Interface4 extends Component {
     render() {
         return (
-            <div>
+            <ThemeProvider theme={theme}>
                 <VideoPlayer>2clip.mp4</VideoPlayer>
 
                 <View style={{marginBottom: 50}}>
@@ -150,7 +165,7 @@ export class Interface4 extends Component {
                 </View>
 
                 <ConfirmAnnotationsButton />
-            </div>
+            </ThemeProvider>
         );
     }
 }

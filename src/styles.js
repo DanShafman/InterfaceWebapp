@@ -49,7 +49,7 @@ export const stylesheet = {
     confirmButton: {
       height: 50,
       alignItems: 'center',
-      backgroundColor: 'green',
+      backgroundColor: '#009688',
       padding: 15,
       marginBottom: 0,
       marginTop: 0,
