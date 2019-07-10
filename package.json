@@ -7,6 +7,8 @@
     "@material-ui/core": "^4.2.0",
     "@material-ui/icons": "^4.2.1",
     "@material-ui/styles": "^4.2.0",
+    "jquery": "^3.4.1",
+    "jsdom": "^15.1.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -14,6 +16,8 @@
     "react-native-collapsible": "^1.4.0",
     "react-native-web": "^0.11.4",
     "react-scripts": "3.0.1",
+    "react-swipe": "^6.0.4",
+    "swipe-js-iso": "^2.1.5",
     "toggle-switch-react-native": "^2.0.2"
   },
   "scripts": {

@@ -17,6 +17,7 @@ import Checkbox from '@material-ui/core/Checkbox'
 import { Text, View, TouchableOpacity, StyleSheet } from "react-native";
 import { stylesheet } from './styles.js'
 
+// Imports for color themes
 import { createMuiTheme } from '@material-ui/core/styles';
 import teal from '@material-ui/core/colors/teal';
 import { ThemeProvider } from '@material-ui/styles';
@@ -26,7 +27,7 @@ import { ThemeProvider } from '@material-ui/styles';
 // Styles for confirm button
 const styles = StyleSheet.create(stylesheet);
 
-
+// Create teal theme
 const theme = createMuiTheme({
     palette: {
       primary: teal,
